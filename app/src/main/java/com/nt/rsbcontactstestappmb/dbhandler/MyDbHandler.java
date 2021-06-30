@@ -91,22 +91,6 @@ public class MyDbHandler extends SQLiteOpenHelper {
         return i;
     }
 
-//    public int updateContactPhoto(Contact contact) {
-//        SQLiteDatabase db = this.getWritableDatabase();
-//
-//        ContentValues values = new ContentValues();
-//        values.put(Params.KEY_NAME, contact.getName());
-//        values.put(Params.KEY_PHONE, contact.getPhone());
-//        values.put(Params.KEY_PHOTO, contact.getByteBuffer());
-//        values.put(Params.KEY_FAV, contact.getFav());
-//        values.put(Params.KEY_DELETED, contact.getDeleted());
-//
-//        //Lets update now
-//        Log.v("contact_id", ""+contact.getId());
-//        int i = db.update(Params.TABLE_NAME, values, Params.KEY_ID + "='" + contact.getId() + "'", null);
-//        db.close();
-//        return i;
-//    }
 
     public List<Contact> getFavContacts() {
         List<Contact> contactList = new ArrayList<>();
